@@ -1,3 +1,7 @@
+/* Importando as fontes do googl */
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=LXGW+WenKai+Mono+TC&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=LXGW+WenKai+Mono+TC&display=swap');
+
 /* Zerar as margens de todos os elementos da pagina. Margens exrternas e intarans */
 *{
     margin:0px;
@@ -5,6 +9,136 @@
     box-sizing:border-box;
 }
 /* Vamos adicionar uma imagem ao fundo do header */
-header{background-image: url("../img/cafe19.jpeg");
-    height: 600px;
+header{background-image: url("../img/cafefriends.jpg");
+    /* Ajustar o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* ajustar a posição da imagem em x e y */
+    background-position: 0px -400px;
+    height: 500px;
+    padding: 25px;
+    
+}
+
+nav{
+    /* Tornando o conteúdo da nav flexível. Isso permite que os elementos fiquem um ao lado do outro  */
+
+    display: flex;
+    /* Alinhamento vertical dos elementos que estão no nav */
+
+    align-items: center;
+
+}
+
+h1{
+    /* Mudar cor da letra */
+    color: white;
+    /* Altarerar o tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+        font-size: 30pt;
+    /* Alterar o tamanho da caixa */
+    text-transform: capitalize;
+    margin-right: 230px;
+
+}
+ul{
+    /* Retirar o marcador da lista */
+    list-style: none;
+
+}
+header ul li{
+    /* Vamos ajustar a disposição(display)
+    dos itens da lista em formato de linha */
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+
+}
+header ul li:hover{
+    background-color:#d89278 
+
+}
+header ul li a{
+    color:rgb(197, 8, 8) ;
+    /*  Vamos retirar o underline(sublinhado) */
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header h2{
+  color: white;
+  text-align: center;
+  margin-top: 130px;    
+  font-family: "Oswald", sans-serif;
+font-size: 40px;
+font-weight: 200;
+text-shadow: 0px 0px 5px blue;
+}
+header p{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 17pt;
+    color: white;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-shadow: 0px 0px 5px blue;
+}
+
+footer{
+    background-color: #8d6e63;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: black;
+}
+
+footer #rede li{
+    /* colocar as redes em linha */
+    display: inline-block;
+    margin-right: 10px;
+
+
+}
+/* -- Formatação da pagina index -- */
+main h2{
+    font-family: "LXGW WenKai Mono TC", monospace;
+    margin: 20px;
+    font-size: 25px;
+color:#8d6e63
+}
+main #home p{
+    font-family: arial;
+    margin: 0px 50px 30px 50px;
+    text-align: justify;/*alinhar os dois pontos*/
+    font-size: 12pt;
+    /* O comando line-height define a altura da linha
+    (espaçamento entre linhas). Estamos usando uma altura de 1,5, ou seja, 
+    o tamanho da fon te mais meio do tamanho da fonte */
+    line-height: 18pt;
+}
+main #imghome img{ 
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    /* Arredondar os cantos da Imagem */
+    border-radius: 20px;
+/* Vamos aplicar um efeito de transparência
+a imagem usando um comando Opacity que varia
+entre 0 e 1, ou seja, se você aplicaf 0.6, significa 
+que está usando 60% de opacidade. Isto representa 60% de visibilidade*/
+opacity: 0.6;
+/*  O comando transition realiza uma animação de transição, que você pode configurar o tipo de transição
+e o tempo da transição */
+transition: ease 1s;
+}
+main #imghome img:hover{
+    opacity: 1;
+}
+main #imghome{
+    text-align: center;
 }

@@ -135,10 +135,56 @@ opacity: 0.6;
 /*  O comando transition realiza uma animação de transição, que você pode configurar o tipo de transição
 e o tempo da transição */
 transition: ease 1s;
+
 }
+
 main #imghome img:hover{
     opacity: 1;
+
 }
+
 main #imghome{
     text-align: center;
+
 }
+
+/* ------------ Formatação da página cardápio----------- */
+main #categoriacardapio{
+    width: 80%;
+    /* Vamos centralizar a caixa categoria 
+    modificando a margem da esquerda e da direira 
+    como auto de automáico */
+    margin-left: auto;
+    margin-right: auto;
+/* aplicar a disposição flex para deixar as imagens uma ao lado da outra */
+display: flex;
+/* Alinhar o conteudo ao centro */
+justify-content: center;
+align-items: center;
+margin-top: -10px;
+
+
+}
+
+.itemcardapio img{
+width: 150px;
+height: 150px;
+border-radius: 30%;
+display: block;
+box-shadow: 0px 0px 15px rgb(216, 54, 54);
+margin-bottom: 5px;
+
+
+}
+.itemcardapio{
+text-align:center;
+margin: 10px;
+
+}
+.itemcardapio a{
+    font-family: Arial;
+    text-decoration: none;
+    color:black;
+    
+}
+
